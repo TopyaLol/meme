@@ -1,0 +1,22 @@
+list = []
+num = input("Введите число:")
+
+def add_num():
+    if num == ValueError:
+        print('Не число')
+    else:
+        list.append(num)
+
+
+def check():
+    is_num = True
+    for i in list:
+        if i > 10:
+            continue
+        else:
+            is_num = False
+            break
+    return is_num
+
+add_num()
+print(check())
